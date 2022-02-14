@@ -1,4 +1,28 @@
-# action.yml
+#1   # action.yml
+  1 name: 'Hello World'
+  2 decsription: 'Greet someone and record the time'
+  3 inputs:
+  4   who-to-greet:
+  5     description: 'Who to greet'
+  6     required: true
+  7     default: 'World'
+  8 outputs:
+  9   time:
+ 10     description: 'The time we greeted you'
+ 11 runs:
+ 12   using: 'docker'
+ 13   image: 'Dockerfile'
+ 14   args:
+ 15     - ${{ inputs.who-to-greet }}
+~
+~
+~
+~
+~
+~
+~
+ NORMAL  +0 ~0 -0 ᚠ main!  action.yml                              yaml     utf-8    6% ㏑:1/16☰℅:1
+ action.yml
 name: 'Hello World'
 decsription: 'Greet someone and record the time'
 inputs:
